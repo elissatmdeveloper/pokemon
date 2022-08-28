@@ -1,6 +1,3 @@
-@import url('http://fonts.cdnfonts.com/css/pokemon-solid');
-@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap');
-
 * {
   box-sizing: border-box;
   padding: 0;
@@ -16,71 +13,59 @@ body {
 main {
   display: flex;
   justify-content: center;
+  width: 100%;
 }
 
 .contenidor-pokemon {
-  background-color: #dbdbdb;
-  background-image: url("https://luzangela.es/wp-content/uploads/2016/07/pokemon-background-designs40.jpg");
-  background-position: center;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  height: 80vh;
-  overflow: scroll;
-  padding: 20px;
-  width: 60vw;
-  
+  background-color: #dbdbdb;;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 89vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  border: 5px solid black;
 }
 
 .informacio{
   display: grid;
-  grid-template-rows: 15% 8% 15% 28% auto;
+  grid-template-rows: 15% 10% 12% 30% auto;
   grid-template-columns: 100%;
-  text-align:center;
+  text-align: center;
   border: 5px solid black;
-  height: 80vh;
-  width:35vw;
-  background-image: url("https://i.pinimg.com/originals/76/40/b0/7640b06c922184ac0b8691a9959b5a40.jpg");
-  background-position: center;
+  height: 89vh;
+  min-width: 320px;
+  background-image: url("/assets/info-background.jpg");
+  background-position: top;
   background-size: cover;
-  background-origin: content-box;
+  background-color: white;
 }
 
 .pokemon-nom {
-  margin-top: -20px;
-  grid-row-start: 1;
-  grid-row-end: 2;
-  grid-column-start: 1;
-  grid-column-end: 2;
   font-family: 'Pokemon Solid', sans-serif;
   text-align: center;
   text-transform: capitalize;
-  font-size: 3em;
+  font-size: 28px;
   color: yellow;
-  text-shadow: 3px 0 0 #000, -3px 0 0 #000, 0 3px 0 #000, 0 -3px 0 #000, 2px 2px #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000;
-}
-
-.pokemon-tipus{
-  grid-row-start: 2;
-  grid-row-end: 3;
-  grid-column-start: 1;
-  grid-column-end: 2;
+  text-shadow: 3px 0 0 #000, -3px 0 0 #000, 0 3px 0 #000, 0 -3px 0 #000, 
+  2px 2px #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000;
 }
 
 .pokemon-moviments{
   margin-top: 10px;
-  grid-row-start: 3;
-  grid-row-end: 4;
-  grid-column-start: 1;
-  grid-column-end: 2;
   background-color: rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+  padding: 10px;
 }
 
 .pokemon-img{
-  width:100%;
+  max-width: 100px;
+  padding: 10px;
 }
 
 .titol-img{
-  width:20%;
+  height: 10vh;
 }
 
 #titol{
@@ -90,73 +75,29 @@ main {
 .pokemon-imatges{
   display: flex;
   justify-content: space-between;
-  grid-row-start: 4;
-  grid-row-end: 5;
-  grid-column-start: 1;
-  grid-column-end: 2;
+  padding-left: 8px;
 }
 
+.pokemon-imatges img {
+  width: 150px;
+  height: 150px;
+}
 
 .caracteristiques{
-  grid-row-start: 5;
-  grid-row-end: 6;
-  grid-column-start: 1;
-  grid-column-end: 2;
   font-family: 'Irish Grover', cursive;
-  font-size: 1.5em;
+  font-size: 20px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   justify-content: space-between;
 }
 
-.caracteristiques p:nth-child(1){
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 1;
-  grid-row-end: 2;
-}
-
-.caracteristiques p:nth-child(2){
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 2;
-  grid-row-end: 3;
-}
-
-.caracteristiques p:nth-child(3){
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 3;
-  grid-row-end: 4;
-}
-
-.caracteristiques p:nth-child(4){
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 2;
-}
-
-.caracteristiques p:nth-child(5){
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 2;
-  grid-row-end: 3;
-}
-
-.caracteristiques p:nth-child(6){
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 3;
-  grid-row-end: 4;
-}
-
 #tipus{
   font-family: 'Irish Grover', cursive;
-  font-size: 2em;
+  font-size: 22px;
   color: white;
-  text-shadow: 3px 0 0 #000, -3px 0 0 #000, 0 3px 0 #000, 0 -3px 0 #000, 2px 2px #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000;
+  text-shadow: 3px 0 0 #000, -3px 0 0 #000, 0 3px 0 #000, 0 -3px 0 #000, 
+  2px 2px #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000;
 }
 
 .caracteristiques span{
@@ -166,11 +107,12 @@ main {
 
 .pokemon-mov-text{
   font-family: 'Irish Grover', cursive;
-  font-size: 1.3em;
+  font-size: 18px;
 }
 
 .pokemon-mov-text strong{
   color: lightblue;
-  font-size: 1.4em;
-  text-shadow: 3px 0 0 #000, -3px 0 0 #000, 0 3px 0 #000, 0 -3px 0 #000, 2px 2px #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000;
+  font-size: 22px;
+  text-shadow: 3px 0 0 #000, -3px 0 0 #000, 0 3px 0 #000, 0 -3px 0 #000, 
+  2px 2px #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000;
 }
