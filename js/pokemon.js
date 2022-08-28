@@ -2,8 +2,8 @@ $(document).ready(function () {
   let contenidorPokemons = $('.contenidor-pokemon');
   function carregarPokemons() {
     let imatgesPokemons = '';
-    // 1154 Pokemons disponibles
-    for (let i = 1; i <= 1150; i++) {
+    // 649 Pokemons disponibles
+    for (let i = 1; i <= 649; i++) {
       imatgesPokemons += `
 	      <img class='pokemon-img' data-id='${i}' src='https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${i}.svg'>
 	    `;
