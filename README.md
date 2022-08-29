@@ -1,7 +1,6 @@
 ## Descripción
 
 * Práctica de DAW desarrollada con HTML5, CSS3, AJAX, APIS's, jQuery, JSON,...
-* Actualmente se encuentra en proceso de mejora.
 
 ## Autor
 **Elissa Torres**
