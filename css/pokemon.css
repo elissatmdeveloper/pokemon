@@ -144,13 +144,13 @@ main {
     padding-top: 15px;
   }
   .pokemon-imatges {
-    top: 200px;
-    left: 12px;
+    top: 230px;
+    left: 8px;
   }
   .caracteristiques{
     grid-template-columns: 100%;
     position: absolute;
-    top: 520px;
+    top: 550px;
     left: 34px;
   }
 }
